@@ -1,4 +1,4 @@
-# Startup_initialdesign
+# Landing Page for Cherker
 This is the initial landing page design for my Startup.
 
 Here's detailed documentation on how to install and set up the HTML and CSS design for your landing page:
