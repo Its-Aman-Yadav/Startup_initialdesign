@@ -191,26 +191,14 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("images/product.JPG") no-repeat right center;
+  background: url(/assets/images/product.JPG) no-repeat right center;
   background-size: cover; /* Adjust the percentage value as desired */
   height: 100vh;
-  color: #fff;
+  color: #c4a73e;
   justify-content: flex-end;
   align-items: center;
   position: relative;
 }
-
-/* .home::before {
-  content: "";
-  position: absolute;
-  /* top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: url("images/leftside.png") center;
-  background-size: contain;
-  z-index: -1;
-} */
 
 .home .max-width {
   width: 100%;

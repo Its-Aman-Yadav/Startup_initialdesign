@@ -72,6 +72,46 @@ $(document).ready(function () {
   });
 });
 
+function bondPeriod() {
+  window.location.href = "./bondPeriod.html";
+}
+function week1() {
+  window.location.href = "./week1.html";
+}
+function week2() {
+  window.location.href = "./week2.html";
+}
+function week3() {
+  window.location.href = "./week3.html";
+}
+function week4() {
+  window.location.href = "./week4.html";
+}
+function week5() {
+  window.location.href = "./week5.html";
+}
+function week6() {
+  window.location.href = "./week6.html";
+}
+function week7() {
+  window.location.href = "./week7.html";
+}
+function week8() {
+  window.location.href = "./week8.html";
+}
+function week9() {
+  window.location.href = "./week9.html";
+}
+function week10() {
+  window.location.href = "./week10.html";
+}
+function week11() {
+  window.location.href = "./week11.html";
+}
+function week12() {
+  window.location.href = "./week12.html";
+}
+
 // Landing page design
 function imgSlider(anything) {
   document.querySelector(".starbucks").src = anything;
