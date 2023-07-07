@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { MongoClient } = require("mongodb");
+const path = require("path");
 
 const app = express();
 const port = 3000;
@@ -11,6 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Connect to MongoDB
 const uri = "mongodb://localhost:27017/your_database_name";
 const client = new MongoClient(uri);
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, "public")));
 
 // Define route for handling form submission
 app.post("/submit", (req, res) => {
@@ -39,6 +43,11 @@ app.post("/submit", (req, res) => {
       }
     });
   });
+});
+
+// Define route for serving the index.html file
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 // Start the server
